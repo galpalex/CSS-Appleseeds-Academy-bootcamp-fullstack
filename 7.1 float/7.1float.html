@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7.1 float</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 600px;
+        margin: 1px auto;
+      }
+      .clr {
+        clear: both;
+      }
+      .box {
+        margin: 1px auto;
+        border: 1px solid black;
+      }
+      .header {
+        background: orange;
+        text-align: center;
+        height: 40px;
+        padding: 9px;
+      }
+      .side {
+        background: green;
+        text-align: left;
+        float: left;
+        width: 29.7%;
+        height: 90px;
+        padding-left: 5px;
+        padding-top: 5px;
+      }
+      .main {
+        background: rgb(218, 12, 245);
+        text-align: right;
+        float: right;
+        width: 69.7%;
+        height: 90px;
+        padding-right: 5px;
+        padding-top: 5px;
+      }
+      .footer {
+        background: blue;
+        text-align: center;
+        height: 40px;
+        padding: 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box header">
+        <p>Header</p>
+      </div>
+      <div class="box side">
+        <p>Side</p>
+      </div>
+      <div class="box main">
+        <p>Main</p>
+      </div>
+      <div class="clr"></div>
+      <div class="box footer">
+        <p>Footer</p>
+      </div>
+    </div>
+  </body>
+</html>
