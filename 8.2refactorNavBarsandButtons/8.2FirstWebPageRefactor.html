@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galperin Alexander profile page</title>
+    <script
+      src="https://kit.fontawesome.com/f2fb111fda.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Have to rebuild cards, will try later -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .cont {
+        margin: 1px;
+        text-align: left;
+        max-width: 800px;
+      }
+      .btn1 {
+        background: #70e000;
+        border: none;
+        font-size: 16px;
+      }
+      .btn1:hover {
+        background: #52a300;
+      }
+      .btn2 {
+        background: #fd190d;
+        border: none;
+        font-size: 13px;
+      }
+      .btn2:hover {
+        background: #ca0c02;
+      }
+      .btn3 {
+        background: #0077b8;
+        border: none;
+        font-size: 10px;
+      }
+      .btn3:hover {
+        background: #005d8f;
+      }
+      .same {
+        color: white;
+        padding: 10px 30px;
+        margin: 10px;
+      }
+      body {
+        background-image: url("/CSS-Appleseeds-Academy-bootcamp-fullstack/7.2refactorCss/img/backgrd.jpg");
+      }
+      .navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: #4c6ca0;
+        border-radius: 20px;
+        overflow: auto;
+      }
+      .navbar li {
+        float: left;
+      }
+      .navbar li a {
+        color: white;
+        text-decoration: 0;
+        display: block;
+        padding: 15px 20px;
+      }
+      .navbar li a:hover {
+        background-color: #446190;
+        color: rgb(119, 221, 235);
+      }
+    </style>
+    <style>
+      .card {
+        border: 1px solid #ccc;
+        background: #f5f5b0;
+        padding-top: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        text-align: center;
+      }
+
+      .enhance {
+        color: rgb(32, 35, 218);
+        background-color: rgb(226, 216, 73);
+        margin: 5px;
+        padding: 5px;
+        text-align: left;
+        width: 840px;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #about {
+        color: rgb(3, 107, 177);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li>
+        <a
+          href="/CSS-Appleseeds-Academy-bootcamp-fullstack/8.2refactorNavBarsandButtons/8.2FirstWebPageRefactor.html"
+          >Home</a
+        >
+      </li>
+      <li><a href="">Recources to study Fullstack</a></li>
+      <li><a href="">YouTube Channels about Adventures I like</a></li>
+      <li><a href="">Chrome Extensions I like</a></li>
+    </ul>
+    <div id="main-header" class="enhance">
+      <h1>Hi Everyone! Glad to see you on my page.</h1>
+      <h2>
+        I'm Alex and I'm working on changing my occupation to Web Developer.
+      </h2>
+    </div>
+    <div class="img-container">
+      <img
+        src="/CSS-Appleseeds-Academy-bootcamp-fullstack/8.2refactorNavBarsandButtons/img/myImg.jpg"
+        alt="MyImg"
+        width="150"
+      />
+    </div>
+
+    <p style="font-size: 19px" id="about">
+      I'm starting a new chapter in my career as a
+      <strong>Full Stack Developer</strong> and would like to thank
+      <a href="https://www.appleseeds.org.il/" target="_blank">Appleseeds</a>
+      <br />
+      nonprofit organization for this opportunity and its commitment
+      <strong> to promote digital equality in Israel.</strong>
+      <br />
+      You may follow my projects at GITHUB to observe my transition towards
+      <strong>Web Developer.</strong> <br />
+    </p>
+    <div class="cont">
+      <button
+        class="btn1 same"
+        onclick="location.href='/CSS-Appleseeds-Academy-bootcamp-fullstack/8.2refactorNavBarsandButtons/8.2card.html';"
+      >
+        Check out my new goal for 2022
+      </button>
+      <button class="btn2 same">My bucket list</button>
+      <button
+        class="btn3 same"
+        type="button"
+        onclick="alert('I like also Hiking and did 70 km hike from the Mediterranean Sea to the Sea of Galilee.')"
+      >
+        Click here to find out my hobby!
+      </button>
+    </div>
+
+    <br />
+
+    <h5>Follow me:</h5>
+    <span class="card">
+      <a href="https://github.com/galpalex" target="_blank">
+        <i class="fa fa-github-square fa-2x"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/alexander-galperin/" target="_blank">
+        <i class="fa fa-linkedin-square fa-2x"></i
+      ></a>
+      <a href="https://twitter.com/Alex_Galp" target="_blank">
+        <i class="fa fa-twitter-square fa-2x"></i
+      ></a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100010428825008"
+        target="_blank"
+      >
+        <i class="fa fa-facebook-square fa-2x"></i
+      ></a>
+    </span>
+  </body>
+</html>
