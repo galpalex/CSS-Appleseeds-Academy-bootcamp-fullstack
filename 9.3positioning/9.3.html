@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.3 Positioning</title>
+  </head>
+
+  <style>
+    .container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background: rgb(67, 73, 73);
+    }
+
+    .box1 {
+      position: absolute;
+      top: 30px;
+      left: 50px;
+      z-index: 0;
+      background: red;
+      width: 60px;
+      height: 50px;
+    }
+    .box2 {
+      position: absolute;
+      top: 65px;
+      left: 90px;
+      background: yellow;
+      width: 40px;
+      height: 40px;
+      z-index: 1;
+    }
+    .box3 {
+      position: absolute;
+      top: 93px;
+      left: 50px;
+      background: green;
+      width: 140px;
+      height: 50px;
+      z-index: 2;
+    }
+    .box4 {
+      position: absolute;
+      background: blue;
+      width: 25px;
+      height: 140px;
+      z-index: 3;
+      top: 30px;
+      left: 150px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box1">div one</div>
+      <div class="box2">div two</div>
+      <div class="box3">div three</div>
+      <div class="box4">div four</div>
+    </div>
+  </body>
+</html>
