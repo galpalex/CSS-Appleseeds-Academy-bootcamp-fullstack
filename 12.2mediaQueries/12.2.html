@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>12.1 Media Queries</title>
+    <style>
+            * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+      }
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+
+              color: black;
+              text-align: left;
+              font-size: 25px;
+
+            }
+
+            /* Smartphones */
+            @media only screen and (max-width: 500px) {
+              body {
+                font-size: 5px;
+              }
+
+            }
+
+            /* Tablet */
+            @media(min-width: 501px) and (max-width: 768px) {
+              body {
+              font-size: 14px;
+              }
+
+
+
+            /* Normal */
+            @media(min-width: 769px) and (max-width: 1200px) {
+              body {
+                font-size: 16px;
+              }
+
+
+            }
+
+            /* Widescreen */
+            @media(min-width: 1201px) {
+              body {
+                font-size: 50px;
+              }
+
+            }
+
+            /* Landscape */
+            @media(max-height: 500px) {
+              body {
+                font-size: 12px;
+              }
+            }
+            .Box{
+              width: 250px;
+            }
+            .first{
+              background: darkcyan;
+            }
+            .test{
+              width: 50px;
+
+            }
+    </style>
+    <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css"> -->
+  </head>
+  <body>
+    <div class="test">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, officia
+      debitis accusamus voluptatem asperiores maiores voluptas? Vero aut quaerat
+      ipsam.
+    </div>
+
+    <div class="first Box">
+      <h2>First Box</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis
+        consectetur animi ratione saepe autem error. Beatae aliquam a
+        perferendis! Hic dolorem, libero sit suscipit assumenda beatae adipisci
+        distinctio. Placeat consectetur incidunt molestiae ut voluptate at enim
+        labore totam eveniet.
+      </p>
+    </div>
+    <div class="Second Box">
+      <h2>Second Box</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis
+        consectetur animi ratione saepe autem error. Beatae aliquam a
+        perferendis! Hic dolorem, libero sit suscipit assumenda beatae adipisci
+        distinctio. Placeat consectetur incidunt molestiae ut voluptate at enim
+        labore totam eveniet.
+      </p>
+    </div>
+    <div class="Third Box">
+      <h2>Third Box</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis
+        consectetur animi ratione saepe autem error. Beatae aliquam a
+        perferendis! Hic dolorem, libero sit suscipit assumenda beatae adipisci
+        distinctio. Placeat consectetur incidunt molestiae ut voluptate at enim
+        labore totam eveniet.
+      </p>
+    </div>
+    <div class="fourth Box">
+      <h2>Fourth Box</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis
+        consectetur animi ratione saepe autem error. Beatae aliquam a
+        perferendis! Hic dolorem, libero sit suscipit assumenda beatae adipisci
+        distinctio. Placeat consectetur incidunt molestiae ut voluptate at enim
+        labore totam eveniet.
+      </p>
+    </div>
+  </body>
+</html>

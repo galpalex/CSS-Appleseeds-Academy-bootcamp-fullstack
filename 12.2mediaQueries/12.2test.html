@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: gray;
+      color: white;
+      text-align: center;
+    }
+
+    /* Smartphones */
+    @media only screen and (max-width: 500px) {
+      .Box {
+        width: 100%;
+        float: none;
+        margin: auto;
+        font-size: 14px;
+        border: 2px solid black;
+      }
+    }
+
+    /* Tablet */
+    @media (min-width: 501px) and (max-width: 768px) {
+      .first,
+      .Third {
+        width: 40%;
+        float: left;
+        margin: auto;
+      }
+      .Second,
+      .fourth {
+        width: 40%;
+        float: right;
+        margin: auto;
+      }
+    }
+
+    /* Normal */
+    @media (min-width: 769px) and (max-width: 1200px) {
+      .Box {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    /* Widescreen */
+    @media (min-width: 1201px) {
+      .Box {
+        width: 25%;
+        float: left;
+      }
+    }
+
+    /* Landscape */
+    @media (max-height: 500px) {
+      .Box {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    .first {
+      background: darkcyan;
+    }
+    .Second {
+      background: darkmagenta;
+    }
+    .Third {
+      background: rgb(69, 79, 177);
+    }
+    .fourth {
+      background: rgb(90, 158, 50);
+    }
+  </style>
+  <body>
+    <div class="first Box">
+      <h2>First Box</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis
+        consectetur animi ratione saepe autem error. Beatae aliquam a
+        perferendis! Hic dolorem, libero sit suscipit assumenda beatae adipisci
+        distinctio. Placeat consectetur incidunt molestiae ut voluptate at enim
+        labore totam eveniet.
+      </p>
+    </div>
+    <div class="Second Box">
+      <h2>Second Box</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis
+        consectetur animi ratione saepe autem error. Beatae aliquam a
+        perferendis! Hic dolorem, libero sit suscipit assumenda beatae adipisci
+        distinctio. Placeat consectetur incidunt molestiae ut voluptate at enim
+        labore totam eveniet.
+      </p>
+    </div>
+    <div class="Third Box">
+      <h2>Third Box</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis
+        consectetur animi ratione saepe autem error. Beatae aliquam a
+        perferendis! Hic dolorem, libero sit suscipit assumenda beatae adipisci
+        distinctio. Placeat consectetur incidunt molestiae ut voluptate at enim
+        labore totam eveniet.
+      </p>
+    </div>
+    <div class="fourth Box">
+      <h2>Fourth Box</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis
+        consectetur animi ratione saepe autem error. Beatae aliquam a
+        perferendis! Hic dolorem, libero sit suscipit assumenda beatae adipisci
+        distinctio. Placeat consectetur incidunt molestiae ut voluptate at enim
+        labore totam eveniet.
+      </p>
+    </div>
+  </body>
+</html>
