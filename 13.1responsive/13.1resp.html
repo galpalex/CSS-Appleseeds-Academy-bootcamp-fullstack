@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13.1</title>
+    <style>
+      h1,
+      p {
+        font-size: calc(12px + (24 - 12) * ((100vw - 400px) / (800 - 400)));
+      }
+      /* or second option */
+      h1 {
+        font-size: 20px;
+      }
+      /* //fluid font from 320px onwards */
+      @media (min-width: 320px) {
+        h1 {
+          font-size: calc(20px + 2vw);
+        }
+      }
+      /* //fix font size for large screens. Calculate this point */
+      @media (min-width: 1750px) {
+        h1 {
+          font-size: 55px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta beatae
+      assumenda quos libero ad reprehenderit consequuntur natus nostrum! Quidem,
+      corporis! Obcaecati quis vitae iste quasi molestiae nesciunt dolorum, id
+      rem.
+    </p>
+  </body>
+</html>
