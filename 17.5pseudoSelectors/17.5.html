@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>17.5</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .p {
+        background: rgb(204, 204, 207);
+        margin: 80px;
+        position: relative;
+        font-size: 1.2rem;
+        width: 80%;
+      }
+
+      .first:hover:after {
+        content: attr(data-tooltip);
+        position: absolute;
+        background-color: yellow;
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px 10px;
+        top: 0.5rem;
+        left: 37.5rem;
+      }
+
+      .first:hover:before {
+        content: "";
+        width: 10px;
+        color: black;
+        position: absolute;
+        background-color: yellow;
+        font-size: 8px;
+        transform: rotate(45deg);
+        text-align: center;
+        padding: 5px;
+        top: 2rem;
+        left: 40.5rem;
+      }
+      .second:hover:after {
+        content: attr(data-tooltip);
+        position: absolute;
+        background-color: yellow;
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px 10px;
+        top: 0.7rem;
+        left: 58rem;
+      }
+
+      .second:hover:before {
+        content: "";
+        width: 10px;
+        color: black;
+        position: absolute;
+        background-color: yellow;
+        font-size: 8px;
+        transform: rotate(45deg);
+        text-align: center;
+        padding: 5px;
+        top: 2.2rem;
+        left: 62rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam
+      consectetur delectus sapiente recusandae quibusdam pariatur incidunt
+      quidem, officia ipsam aliquid eos inventore minus facilis optio vel est
+      cum veniam deserunt ducimus nesciunt a illo neque officiis. Dicta, iure
+      ullam nam sunt voluptatum omnis culpa corrupti error aliquam quam debitis,
+      obcaecati dignissimos
+      <a class="first" href="" data-tooltip="write your note 1">quos</a> unde ex
+      nesciunt! Iure labore itaque
+      <a class="second" href="" data-tooltip="write your note 2">perferendis</a>
+      quidem aspernatur ipsa, libero dolorem molestias ratione nihil, architecto
+      repellendus doloribus.
+    </div>
+  </body>
+</html>
