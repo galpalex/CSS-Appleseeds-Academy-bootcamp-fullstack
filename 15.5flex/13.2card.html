@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.2Card</title>
+    <script
+      src="https://kit.fontawesome.com/f2fb111fda.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .CardImg1 {
+        background: url("/CSS-Appleseeds-Academy-bootcamp-fullstack/13.2landPage/img/lambaImg.jpg")
+          no-repeat center center/cover;
+        height: 40vh;
+      }
+      .CardImg2 {
+        background: url("/CSS-Appleseeds-Academy-bootcamp-fullstack/13.2landPage/img/bently.jpg")
+          no-repeat center center/cover;
+        height: 40vh;
+      }
+      body {
+        background-color: #eaeff1;
+      }
+      .container {
+        max-width: 15%;
+        /* margin: 50px 400px; */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        background-color: rgb(243, 240, 75);
+        border: 1px solid #bacdd8;
+      }
+
+      .container2 {
+        max-width: 15%;
+        margin-left: 40px;
+        padding: 3px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        background-color: rgb(243, 170, 75);
+        border: 1px solid #bacdd8;
+      }
+      .container2 {
+        float: left;
+        width: 45%;
+      }
+      .container {
+        float: left;
+        width: 45%;
+      }
+      .container:hover {
+        box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+      }
+      .container2:hover {
+        box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+      }
+      .subtitle {
+        color: rgb(70, 54, 209);
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .mainCont {
+        height: 100vh;
+
+        background-color: #eaeff1;
+      }
+      @media (max-width: 816px) {
+        .container2 {
+          float: none;
+          width: 100%;
+          margin-left: 0px;
+          margin-top: 10px;
+        }
+        .container {
+          float: none;
+          width: 100%;
+        }
+      }
+      h1,
+      p,
+      h2 {
+        font-size: calc(12px + (24 - 12) * ((100vw - 400px) / (800 - 400)));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainCont">
+      <h1>My Goal for 2022, don't know which one to choose</h1>
+      <h2>Help will be much appreciated <i class="far fa-smile-beam"></i></h2>
+
+      <div class="container">
+        <div class="CardImg1"></div>
+
+        <div>
+          <h3>Lamborghini Aventador</h3>
+          <div class="subtitle">
+            Max speed more than 350 km/h
+            <ul>
+              <li>2.9 sec. to 100 km/h</li>
+              <li>690 HP</li>
+              <li>417,826 &#36; MSRP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="CardImg2"></div>
+
+        <div>
+          <h3>Bently Continental GT</h3>
+          <div class="subtitle">
+            Max speed more than 335 km/h
+            <ul>
+              <li>3.6 sec. to 100 km/h</li>
+              <li>650 HP</li>
+              <li>307,225 &#36; MSRP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
