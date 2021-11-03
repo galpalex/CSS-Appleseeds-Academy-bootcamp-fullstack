@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24.2grid</title>
+    <style>
+      .item {
+        padding: 3rem;
+        background: #f4f4f4;
+        border: #ccc 1px solid;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+        border-radius: 10px;
+        margin: 0px 5px;
+      }
+      .grid {
+        display: grid;
+        grid-template-areas:
+          "red red red red"
+          "blue blue green green"
+          "blue blue purple purple2";
+        grid-gap: 0.5rem;
+      }
+
+      .red {
+        grid-area: red;
+        background-color: red;
+      }
+      .blue {
+        grid-area: blue;
+        background-color: blue;
+      }
+      .green {
+        grid-area: green;
+        background-color: green;
+      }
+      .purple {
+        grid-area: purple;
+        background-color: purple;
+      }
+      .purple2 {
+        grid-area: purple2;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item red"></div>
+      <div class="item blue"></div>
+      <div class="item green"></div>
+      <div class="item purple"></div>
+      <div class="item purple2"></div>
+    </div>
+  </body>
+</html>
