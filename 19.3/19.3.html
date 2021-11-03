@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+    }
+
+    .line2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn {
+      margin: 30px 50px;
+      height: 40px;
+      width: 80px;
+      border: 1px solid black;
+      background: white;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .btn-TranslateY:before {
+      content: "YEAH!";
+      position: absolute;
+      background: red;
+      border: 1px solid black;
+      height: 100%;
+      width: 100%;
+      left: -1px;
+      top: -40px;
+      transform: TranslateY(0);
+      transition: all ease-in-out 0.3s;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+    .btn-TranslateY:hover:before {
+      transform: TranslateY(100%);
+    }
+    /* translate Button */
+    .btn-Translate:before {
+      content: "";
+      position: absolute;
+      background: black;
+      border: 1px solid black;
+      height: 100%;
+      width: 100%;
+      left: -80px;
+      top: -1px;
+      transform: translateX(0);
+      transition: all ease-in-out 0.3s;
+    }
+    .btn-Translate:hover:before {
+      transform: translateX(100%);
+      z-index: -1;
+    }
+    .btn-Translate:hover {
+      color: white;
+    }
+    .btn-Translate {
+      z-index: 2;
+    }
+    /* rotate button */
+    .btn-Rotate:before {
+      content: "";
+      position: absolute;
+      background: yellow;
+      border: 1px solid black;
+      height: 100%;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+      transform-origin: top left;
+      transform: rotate(-90deg);
+      transition: all ease-in-out 0.3s;
+    }
+    .btn-Rotate:hover:before {
+      transform: rotate(0);
+      z-index: -1;
+    }
+    .btn-Rotate {
+      z-index: 2;
+    }
+    /* Scale */
+    .btn-Scale:before {
+      content: "Scale & Opacity";
+      color: white;
+      position: absolute;
+      background: black;
+      border: 1px solid black;
+      height: 100%;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      transform: scale(2);
+      transition: all ease-in-out 0.3s;
+    }
+    .btn-Scale:hover:before {
+      transform: scale(1);
+      opacity: 1;
+    }
+  </style>
+
+  <body>
+    <div class="cont">
+      <div>
+        <button class="btn btn-Rotate">Rotate</button>
+        <button class="btn btn-Translate">Translate</button>
+        <button class="btn btn-TranslateY">TranslateY</button>
+      </div>
+
+      <div class="line2">
+        <button class="btn btn-Scale">Scale & Opacity</button>
+      </div>
+    </div>
+  </body>
+</html>
