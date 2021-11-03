@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>19.5keyframe</title>
+  
+  <style>
+
+
+    body {
+      height: 100vh;
+      background-color:black; 
+      display: flex;
+      align-items: center;
+      justify-content:space-evenly
+    }
+    .circle2 {
+   
+   border: solid 3px black;
+   border-left-color: rgb(18, 231, 238);
+   border-right-color: black;
+   border-top-color: black;
+   border-bottom-color: black;
+   
+   margin: 50px 50px;
+   padding: 10px ;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   animation-name: rotate;
+   animation-duration: 1.2s; 
+   animation-iteration-count: infinite; 
+ }
+    .circle1 {
+   
+  border: solid 5px black;
+  border-left-color: rgb(18, 231, 238);
+  border-right-color: grey;
+  border-top-color: grey;
+  border-bottom-color: grey;
+  
+  margin: 50px 50px;
+  padding: 10px ;
+  width: 100px;
+  height: 100px;
+ border-radius: 50%;
+ animation-name: rotate;
+  animation-duration: 0.8s; 
+  animation-iteration-count: infinite; 
+}
+
+
+
+ @keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }100% {
+    transform: rotate(360deg);
+  }
+
+} 
+
+.small {
+  animation-name: circles3;
+  animation-duration: 1s; 
+  animation-iteration-count: infinite; 
+}
+
+.one {
+      
+   border: solid 5px black;
+ background-color: grey;
+   margin: 50px 10px;
+   padding: 5px ; 
+   width: 10px;
+   height: 10px;
+  border-radius: 50%;
+  
+ }
+ .two {
+      
+      border: solid 5px black;
+    background-color: grey;
+      margin: 50px 10px;
+      padding: 5px ; 
+      width: 10px;
+      height: 10px;
+     border-radius: 50%;
+     animation-delay:0.33333s;
+    }
+    .three {
+      
+      border: solid 5px black;
+    background-color: grey;
+      margin: 50px 10px;
+      padding: 5px ; 
+      width: 10px;
+      height: 10px;
+     border-radius: 50%;
+     animation-delay:0.666666s;
+    }
+    @keyframes circles3 {
+      0% {background-color: rgb(18, 231, 238);}
+     
+        
+}
+ .up {
+  animation-name: upAndDown;
+  animation-duration: 1s; 
+  animation-iteration-count: infinite; 
+  position: relative;
+  top:0;
+  right: 0;
+}
+
+.oneA {
+      
+   border: solid 5px black;
+  background-color: rgb(18, 231, 238);
+   margin: 50px 10px;
+   padding: 5px ; 
+   width: 10px;
+   height: 10px;
+  border-radius: 50%;
+  
+ }
+ .twoA {
+      
+    border: solid 5px black;
+    background-color: rgb(18, 231, 238);
+    margin: 50px 10px;
+    padding: 5px ; 
+    width: 10px;
+    height: 10px;
+     border-radius: 50%;
+     animation-delay:0.33333s;
+    }
+  .threeA {
+      
+    border: solid 5px black;
+    background-color: rgb(18, 231, 238);
+    margin: 50px 10px;
+    padding: 5px ; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation-delay:0.666666s;
+    }
+    @keyframes upAndDown {
+      33% { left: 0;
+      top: -18px;}   
+}
+
+  </style>
+  </head>
+  </body>
+  
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class= "small one"> </div>
+      <div class="small two "> </div>
+      <div class="small three"> </div>
+  <div><p></p></div>
+  <div><p></p></div>
+  <div><p></p></div>
+      <div class= "up oneA"> </div>
+      <div class="up twoA"> </div>
+      <div class="up threeA"> </div> 
+    
+    
+    </body>
+</html>
+    
